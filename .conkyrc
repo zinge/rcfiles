@@ -30,7 +30,7 @@ conky.config = {
     background = true,
     border_width = 1,
     cpu_avg_samples = 2,
-	default_color = 'white',
+    default_color = 'white',
     default_outline_color = 'white',
     default_shade_color = 'white',
     draw_borders = false,
@@ -43,7 +43,7 @@ conky.config = {
     gap_x = 5,
     gap_y = 60,
     minimum_height = 5,
-	minimum_width = 5,
+    minimum_width = 5,
     net_avg_samples = 2,
     no_buffers = true,
     out_to_console = false,
@@ -59,6 +59,7 @@ conky.config = {
     uppercase = false,
     use_spacer = 'none',
     show_graph_scale = false,
+    double_buffer = true,
     show_graph_range = false
 }
 
