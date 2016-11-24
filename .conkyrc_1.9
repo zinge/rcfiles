@@ -10,7 +10,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 use_xft yes
-xftfont DejaVu Sans Mono:size=6
+xftfont DejaVu Sans Mono:size=7
 gap_x 5
 gap_y 60
 minimum_size 5 5
@@ -39,7 +39,7 @@ $hr
 ${color 191970}Uptime:$color $uptime
 ${color 191970}Frequency (in MHz):$color $freq
 ${color 191970}CPU Usage:$color $cpu%
-${cpubar 10}
+${cpubar}
 ${color 191970}CPU1: ${cpugraph cpu1 000000 ffff00}
 ${color 191970}CPU2: ${cpugraph cpu2 000000 ffff00}
 ${color 191970}CPU3: ${cpugraph cpu3 000000 ffff00}
@@ -47,9 +47,9 @@ ${color 191970}CPU4: ${cpugraph cpu4 000000 ffff00}
 $hr
 ${color 191970}Memory && Swap:
 ${color 191970}RAM Usage:$color $mem/$memmax - $memperc%
-${membar 10}
+${membar}
 ${color 191970}Swap Usage:$color $swap/$swapmax - $swapperc%
-${swapbar 10}
+${swapbar}
 $hr
 ${color 191970}File systems:
  / $color${fs_used /}/${fs_size /} ${fs_bar 6 /}
