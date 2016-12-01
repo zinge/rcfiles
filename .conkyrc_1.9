@@ -42,8 +42,6 @@ ${color 191970}CPU Usage:$color $cpu%
 ${cpubar}
 ${color 191970}CPU1: ${cpugraph cpu1 000000 ffff00}
 ${color 191970}CPU2: ${cpugraph cpu2 000000 ffff00}
-${color 191970}CPU3: ${cpugraph cpu3 000000 ffff00}
-${color 191970}CPU4: ${cpugraph cpu4 000000 ffff00}
 $hr
 ${color 191970}Memory && Swap:
 ${color 191970}RAM Usage:$color $mem/$memmax - $memperc%
@@ -54,17 +52,19 @@ $hr
 ${color 191970}File systems:
  / $color${fs_used /}/${fs_size /} ${fs_bar 6 /}
  /boot $color${fs_used /boot}/${fs_size /boot} ${fs_bar 6 /boot}
- /boot/efi $color${fs_used /boot/efi}/${fs_size /boot/efi} ${fs_bar 6 /boot/efi}
+${color 191970}SYS: ${diskiograph /dev/disk/by-uuid/08e2b255-97d2-4a13-9f5b-50de72de7119}
+${color 191970}VIRT: ${diskiograph /dev/disk/by-uuid/1d218cd2-bbdf-443c-8242-05753863fe3b}
+${color 191970}BOOT: ${diskiograph /dev/disk/by-uuid/8835c1d6-bb84-4a4c-a8a9-f8604b7bb96b}
 $hr
 ${color 191970}Networking:
-${downspeedgraph enp5s0 000000 ff0000}
-DLS:$color ${downspeed enp5s0}/s ${color 191970}${alignr}Total:$color ${totaldown enp5s0} ${color 191970}
-${upspeedgraph enp5s0 000000 00ff00}
-ULS:$color ${upspeed enp5s0}/s ${color 191970}${alignr}Total:$color ${totalup enp5s0} ${color 191970}
+${downspeedgraph enp2s0 000000 ff0000}
+DLS:$color ${downspeed enp2s0}/s ${color 191970}${alignr}Total:$color ${totaldown enp2s0} ${color 191970}
+${upspeedgraph enp2s0 000000 00ff00}
+ULS:$color ${upspeed enp2s0}/s ${color 191970}${alignr}Total:$color ${totalup enp2s0} ${color 191970}
 $hr
 ${color 191970}Processes:$color $processes  ${color 191970}Running:$color $running_processes
 ${color 191970}Top 10:
-${color 191970}Name              PID   CPU%   MEM%
+${color 191970}Name              PID     CPU%   MEM%
 ${color ff0000} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
 ${color ff0000} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
 ${color ff0000} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
@@ -75,3 +75,5 @@ ${color ff4500} ${top name 7} ${top pid 7} ${top cpu 7} ${top mem 7}
 ${color ff4500} ${top name 8} ${top pid 8} ${top cpu 8} ${top mem 8}
 ${color ff4500} ${top name 9} ${top pid 9} ${top cpu 9} ${top mem 9}
 ${color ff4500} ${top name 10} ${top pid 10} ${top cpu 10} ${top mem 10}
+
+${color 191970}Total VNC ports: ${tcp_portmon 5900 6000 count}$color
