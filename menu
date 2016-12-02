@@ -1,0 +1,25 @@
+      [exec] (terminal) {xfce4-terminal}
+      [exec] (#terminal) {lxqt-sudo -d xfce4-terminal}
+      [exec] (chromium) {chromium-browser}
+      [exec] (mousepad) {mousepad}
+      [exec] (thunar) {thunar}
+[submenu] (Virtual)
+      [exec] (vnc-client) {vncviewer}
+      [exec] (virt-namager) {virt-manager}
+[end]
+[submenu] (Multimedia)
+      [exec] (vlc) {vlc}
+      [exec] (pavucontrol) {pavucontrol}
+[end]
+[submenu] (Downloaders)
+      [exec] (uget) {uget-gtk}
+      [exec] (transmission) {transmission-gtk}
+[end]
+[submenu] (Devel)
+      [exec] (atom) {atom}
+[end]
+[submenu] (Images)
+      [exec] (ristretto) {ristretto}
+      [exec] (xpdf) {xpdf}
+      [exec] (screenshooter) {xfce4-screenshooter}
+[end]
