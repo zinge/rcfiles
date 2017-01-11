@@ -1,6 +1,6 @@
       [exec] (terminal) {xfce4-terminal}
       [exec] (#terminal) {lxqt-sudo -d xfce4-terminal}
-      [exec] (chromium) {chromium-browser}
+      [exec] (chrome) {google-chrome}
       [exec] (mousepad) {mousepad}
       [exec] (thunar) {thunar}
 [submenu] (Virtual)
