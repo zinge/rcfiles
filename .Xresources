@@ -1,3 +1,5 @@
 xterm*faceName: DejaVu Sans Mono:style=Book
 xterm*faceSize: 10
 xterm*selectToClipboard: true
+xterm*foreground: rgb:b2/b2/b2
+xterm*background: rgb:08/08/08
