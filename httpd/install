@@ -1,0 +1,6 @@
+
+sudo yum install postgresql-server
+sudo yum install httpd
+sudo systemctl start httpd
+sudo yum install php php-pdo php-pgsql php-xml php-mbstring php-nette-tokenizer
+sudo systemctl restart httpd
