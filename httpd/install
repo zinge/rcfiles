@@ -1,5 +1,5 @@
 
 sudo yum install httpd
 sudo systemctl start httpd
-sudo yum install php php-pdo php-pgsql php-xml php-mbstring php-nette-tokenizer php-mcrypt
+sudo yum install php php-fpm php-pdo php-pgsql php-xml php-mbstring php-nette-tokenizer php-mcrypt
 sudo systemctl restart httpd
