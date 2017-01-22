@@ -1,5 +1,6 @@
 ### Get and install 
-firs go postgresql site and find information about repo, https://yum.postgresql.org/repopackages.php
+first go postgresql site and find information about repo, https://yum.postgresql.org/repopackages.php
+
 use repo for 9.6 postgresql
 after install repo,
 list available distros, i'm  use 
@@ -16,12 +17,13 @@ $sudo yum install postgresql96 postgresql96-server pgadmin3_96
 systemctl list-unit-files | grep postgresql
 ```
 look at available systemd service file, enable and start this(
-  initialize DB first 
+  initialize DB first)
 ```
 $sudo /usr/pgsql-9.6/bin/postgresql96-setup initdb
 ```
 ### Tune postgresql.conf
 Okay, after start server a look memmory and CPU usage ... damn ...
+
 Tune postgresql.conf file, from 1GB memory usage, and 10 connections, with http://pgtune.leopard.in.ua/
 ```
 max_connections = 10
