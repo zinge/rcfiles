@@ -5,7 +5,7 @@ use repo for 9.6 postgresql
 after install repo,
 list available distros, i'm  use 
 ```
-yum list postgresql*
+$yum list postgresql*
 ```
 and install 
 ```
@@ -14,7 +14,7 @@ $sudo yum install postgresql96 postgresql96-server pgadmin3_96
 
 ### Enable autostart and first start service
 ```
-systemctl list-unit-files | grep postgresql
+$sudo systemctl list-unit-files | grep postgresql
 ```
 look at available systemd service file, enable and start this(
   initialize DB first)
