@@ -1,3 +1,14 @@
+firs go postgresql site and find information about repo.
+for 9.6 postgresql look at https://yum.postgresql.org/repopackages.php page
+after install repo,
+list available distros, i'm  use 
+yum list postgresql*
+and install $sudo yum install postgresql96 postgresql96-server pgadmin3_96
+
+systemctl list-unit-files | grep postgresql
+look at available systemd service file, enable and start this(
+  initialize DB first $sudo /usr/pgsql-9.6/bin/postgresql96-setup initdb)
+
 max_connections = 10
 shared_buffers = 256MB
 effective_cache_size = 768MB
