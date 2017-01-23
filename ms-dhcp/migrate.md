@@ -19,7 +19,7 @@ Import-DHCPServer -ComputerName $newDhcpServer -File $backUpFileName -BackupPath
 ### Look server scopes
 ```
 Get-DhcpServerv4Scope –ComputerName $curDhcpServer
-$Scope = <paste info from query>
+$Scope = <paste ScopeId info from query>
 ```
 
 ### Transfer current leases
