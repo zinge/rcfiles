@@ -1,5 +1,28 @@
-xterm*faceName: DejaVu Sans Mono:style=Book
-xterm*faceSize: 10
-xterm*selectToClipboard: true
-xterm*foreground: rgb:b2/b2/b2
-xterm*background: rgb:08/08/08
+  1 xterm*faceName: DejaVu Sans Mono:style=Book
+  2 xterm*faceSize: 10
+  3 xterm*selectToClipboard: true
+  4 xterm*foreground: rgb:ff/45/00
+  5 xterm*background: rgb:00/00/00
+  6 
+  7 xscreensaver.Dialog.headingFont: -*-dejavu sans mono-bold-r-*-*-12-*-*-*-*-*-*-*
+  8 xscreensaver.Dialog.bodyFont:    -*-dejavu sans mono-medium-r-*-*-12-*-*-*-*-*-*-*
+  9 xscreensaver.Dialog.labelFont:   -*-dejavu sans mono-medium-r-*-*-12-*-*-*-*-*-*-*
+ 10 xscreensaver.Dialog.unameFont:   -*-dejavu sans mono-medium-r-*-*-12-*-*-*-*-*-*-*
+ 11 xscreensaver.Dialog.buttonFont:  -*-dejavu sans mono-bold-r-*-*-12-*-*-*-*-*-*-*
+ 12 xscreensaver.Dialog.dateFont:    -*-dejavu sans mono-medium-r-*-*-11-*-*-*-*-*-*-*
+ 13 xscreensaver.passwd.passwdFont:  -*-dejavu sans mono-bold-r-*-*-12-*-*-*-*-*-*-*
+ 14 xscreensaver.Dialog.foreground:             #ffffff
+ 15 xscreensaver.Dialog.background:             #111111
+ 16 xscreensaver.Dialog.topShadowColor:         #111111
+ 17 xscreensaver.Dialog.bottomShadowColor:      #111111
+ 18 xscreensaver.Dialog.Button.foreground:      #333333
+ 19 xscreensaver.Dialog.Button.background:      #ffffff
+ 20 xscreensaver.Dialog.text.foreground:        #333333
+ 21 xscreensaver.Dialog.text.background:        #ffffff
+ 22 xscreensaver.passwd.thermometer.foreground: #cc0000
+ 23 xscreensaver.passwd.thermometer.background: #000000
+ 24 xscreensaver.passwd.thermometer.width:      8
+ 25 xscreensaver.Dialog.internalBorderWidth:    24
+ 26 xscreensaver.Dialog.borderWidth:            5
+ 27 xscreensaver.Dialog.shadowThickness:        2
+ 28 xscreensaver.dateFormat: %a, %e %b %Y %H:%M
