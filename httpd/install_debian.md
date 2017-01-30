@@ -26,6 +26,11 @@ Edit file /etc/apache2/mods-enabled/fastcgi.conf
 </IfModule>
 ```
 ### Create virtual host
+First create directory, and own rights
+```
+mkdir /home/lara
+chown -R UN:UG /home/lara 
+```
 Edit file /etc/apache2/sites-available/001-lara.conf
 ```
 <VirtualHost *:16080>
@@ -43,4 +48,7 @@ Edit file /etc/apache2/sites-available/001-lara.conf
 
 </VirtualHost>
 ```
-
+restart apache and php5-fpm
+```
+$sudo systemclt restart apache2 php5-fpm
+```
