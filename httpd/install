@@ -2,6 +2,12 @@
 sudo yum install httpd
 sudo systemctl start httpd
 sudo yum install php php-fpm php-pdo php-pgsql php-xml php-mbstring php-nette-tokenizer php-mcrypt
+
+
+apt-get install php5-fpm php5-pgsql php5-mcrypt
+
+
+
 <FilesMatch \.php$>
          #SetHandler application/x-httpd-php-source
          SetHandler "proxy:fcgi://127.0.0.1:9000"
