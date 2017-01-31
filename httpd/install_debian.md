@@ -1,16 +1,17 @@
 ### Install apache and mod
+
+first add /etc/apt/sources.list contrib non-free pool
 ```
 $sudo apt-get install apache2 libapache2-mod-fastcgi
+```
+### Enable apache modules
+```
+$sudo a2enmod actions
 ```
 ### Install php and modules
 ```
 $sudo apt-get install php5-fpm php5-pgsql php5-mcrypt
 ```
-### Enable apache modules
-```
-$sudo a2enmod actions fastcgi alias
-```
-
 ### Configure php5-fpm
 Edit file /etc/apache2/mods-enabled/fastcgi.conf
 ```
@@ -48,7 +49,12 @@ Edit file /etc/apache2/sites-available/001-lara.conf
 
 </VirtualHost>
 ```
+Edit /etc/apache2/ports.conf, and add next string
+```
+Listen 16080
+```
+
 restart apache and php5-fpm
 ```
-$sudo systemclt restart apache2 php5-fpm
+$sudo systemctl restart apache2 php5-fpm
 ```
