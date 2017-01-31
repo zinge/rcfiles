@@ -26,7 +26,6 @@ Okay, after start server a look memmory and CPU usage ... damn ...
 Tune postgresql.conf file, from 512MB memory usage, and 5 connections, with http://pgtune.leopard.in.ua/
 ```
 max_connections = 5
-shared_buffers = 128MB
 effective_cache_size = 384MB
 work_mem = 26214kB
 maintenance_work_mem = 32MB
@@ -34,5 +33,6 @@ min_wal_size = 1GB
 max_wal_size = 2GB
 checkpoint_completion_target = 0.7
 wal_buffers = 3932kB
+shared_buffers = 128MB
 default_statistics_target = 100
 ```
