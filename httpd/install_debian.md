@@ -26,6 +26,11 @@ Edit file /etc/apache2/mods-enabled/fastcgi.conf
     </Directory>
 </IfModule>
 ```
+### Enable rewrite_mod
+```
+$cd /etc/apache2/mods-enabled
+$sudo ln -s ../mods-available/rewrite.load rewrite.load
+```
 ### Create virtual host
 First create directory, and own rights
 ```
