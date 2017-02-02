@@ -54,6 +54,11 @@ Edit file /etc/apache2/sites-available/001-lara.conf
 
 </VirtualHost>
 ```
+Enable site config
+```
+cd /etc/apache2/sites-enabled
+sudo ln -s ../sites-available/001-lara.conf 001-lara.conf
+```
 Edit /etc/apache2/ports.conf, and add next string
 ```
 Listen 16080
