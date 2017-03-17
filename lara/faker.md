@@ -48,3 +48,5 @@ php artisan migrate
 php artisan db:seed
 ```
 готово!
+
+Если что-то подзабыл, читай [Laravel seeding](https://laravel.com/docs/seeding)
