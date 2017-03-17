@@ -12,7 +12,9 @@ $table->string('name');
 ```
 
 дальше создаем болванку, имя должно начинаться с имени модели, т.е. LudiFactory
+
 тупа копируем существующую database/factories/ModelFactory с нашим именем,
+
 удаляем в файле все ненужное, и добавляем следующий код
 ```
 $factory->define(App\Ludi::class, function (Faker\Generator $faker) {
@@ -24,6 +26,7 @@ $factory->define(App\Ludi::class, function (Faker\Generator $faker) {
 ```
 
 так, болванка готова, что умеет faker смотрим у него на сайте
+
 создаем seeder
 ```
 php artisan make:seeder LudisTableSeeder
