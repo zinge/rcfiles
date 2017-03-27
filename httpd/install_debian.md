@@ -6,7 +6,7 @@ $sudo apt-get install apache2 libapache2-mod-fastcgi
 ```
 ### Enable apache modules
 ```
-$sudo a2enmod actions
+$sudo a2enmod actions rewrite
 ```
 ### Install php and modules
 ```
@@ -25,11 +25,6 @@ Edit file /etc/apache2/mods-enabled/fastcgi.conf
         Require all granted
     </Directory>
 </IfModule>
-```
-### Enable rewrite_mod
-```
-$cd /etc/apache2/mods-enabled
-$sudo ln -s ../mods-available/rewrite.load rewrite.load
 ```
 ### Create virtual host
 First create directory, and own rights
