@@ -16,7 +16,7 @@ ss -an | grep "5432"
 
 ### Ставим php
 ```
-sudo apt-get install php-fpm php-pgsql php-xml php-mbstring
+sudo apt-get install php-fpm php-pgsql php-xml php-mbstring php-zip
 ```
 
 дополнительно правим файл /etc/php/7.0/fpm/php.ini
