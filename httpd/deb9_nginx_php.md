@@ -1,4 +1,4 @@
-### Install nginx
+### Ставим nginx
 ```
 sudo apt-get install nginx
 ```
@@ -8,21 +8,28 @@ sudo apt-get install nginx
 ```
 sudo apt-get install postgresql
 ```
-проверяем, т.е. ss -an | grep "5432"
+
+проверяем, т.е.
+```
+ss -an | grep "5432"
+```
 
 ### Ставим php
 ```
 sudo apt-get install php-fpm php-pgsql php-xml php-mbstring
 ```
+
 дополнительно правим файл /etc/php/7.0/fpm/php.ini
 ```
 cgi.fix_pathinfo=0
 ```
+
 ну и перезапускаем демона, чтобы наверняка
 ```
 sudo systemctl restart php7.0-fpm.service
 ```
 ### Настройка сервера
+
 правим файл /etc/nginx/sites-available/default, и приводим его к виду
 ```
 server {
@@ -48,4 +55,19 @@ server {
     }
 }
 ```
-проверяем правильность конфига, sudo nginx -t
+
+проверяем правильность конфига,
+```
+sudo nginx -t
+```
+
+перезагружаем конфиги
+```
+sudo systemctl reload nginx.service
+```
+
+для проверки php, правим файлик /var/www/html/info.php и приводим его к виду
+```
+<?php
+    phpinfo();
+```
