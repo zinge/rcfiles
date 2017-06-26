@@ -71,3 +71,12 @@ sudo systemctl reload nginx.service
 <?php
     phpinfo();
 ```
+открываем в броузере, http://localhost/info.php
+
+### Laravel
+настрйка закончена, дополнительная настройка добивает функционал laravel
+ставим в системный composer
+```
+sudo apt-get install composer
+```
+# lara
