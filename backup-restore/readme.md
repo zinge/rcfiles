@@ -23,6 +23,7 @@ EFI in /boot/efi
 ```
 sudo tar -xvpzf /path/to/backup.tar.gz -C / --numeric-owner
 ```
+#!!! Correct fstab !!!
 
 # Mount
 ```
