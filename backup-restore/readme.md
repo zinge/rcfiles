@@ -13,7 +13,7 @@ If you use EFI type loader, need backup this(only full backup way). EFI located 
 
 ## different other: else if you plain only copy files, without full backup
 ```
-sudo rsync -aXS --exclude='/*/.gvfs' /home/. /media/home/.
+sudo rsync -avhXS --progress --exclude='/*/.gvfs' /home/. /media/home/.
 ```
 
 # Restore(if of course full backup)
