@@ -1,0 +1,3 @@
+Theme = moca_theme
+XTermTheme = moca_theme
+Layout1 = directory(0,0,100%,FILL)
